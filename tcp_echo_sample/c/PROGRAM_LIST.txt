@@ -1,0 +1,17 @@
+"echo server/client sample implementations in *nix, c-language"
+
+- server01.c :
+    AF_INET family server socket, 
+    non-blocking, accept only one client connection, 
+    don't fork().
+
+- client01.c :
+    AF_INET family simple client.
+    send "hello" (5bytes), read 5bytes, disconnect.
+    local port binding supported.
+
+- client02.c :
+    AF_INET family simple client.
+    send "hello" (5bytes), read 5bytes, disconnect.
+    connection timeout supported.
+
